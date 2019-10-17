@@ -1,7 +1,8 @@
 images/
-static/js/jquery-1.9.1.min.js
-static/js/js.js
-static/js/SurSlide.js
-static/js/SurTab.js
-static/js/ScrollBar.js
-static/js/ie-css3.htc
+js/
+
+Work_103_Web-抚顺市检察院 - CMS/static/js/jquery-1.9.1.min.js
+Work_103_Web-抚顺市检察院 - CMS/static/js/js.js
+
+Work_103_Web-抚顺市检察院 - CMS/static/js/ScrollBar.js
+Work_103_Web-抚顺市检察院 - CMS/static/js/ie-css3.htc
