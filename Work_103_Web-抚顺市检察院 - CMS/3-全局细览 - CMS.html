@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="gb2312">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>{Stl.SiteName}</title>
+	<link href="{Stl.SiteUrl}/static/css/css.css" rel="stylesheet">
+	<link rel="shortcut icon" href="{Stl.SiteUrl}/static/images/favicon.ico">
+	<!-- meta -->
+	<meta name="SiteName" content="抚顺市检察院">
+	<meta name="ContentSource" content="抚顺市检察院">
+</head>
+<body class="jcy_body_bg">
+  <!-- 头部 -->
+	<stl:include file="/include/head.html"></stl:include>
+
+  <div class="jcy_content">
+    <div class="jcy_main">
+      <div class="govtjjcgxl-content">
+        <div class="govtjjcgxl-main">
+           <!-- GovCurrentBox -->
+					 <div class="govtjjcgxl-currbox mb1">当前位置：<stl:location separator="&nbsp;&nbsp;&gt;&nbsp;&nbsp;"></stl:location></div>
+           <!-- END GovCurrentBox -->
+           <div class="govtjjxlct-box mb5">
+						 <!--Xl Head-->
+						 <div class="gov_xlheader">
+							 <h5><stl:content type="Title"></stl:content></h5>
+							 <div class="gov_message">
+									 <p class="gov_time">发布时间：<stl:content type="AddDate"></stl:content></p>
+									 <p class="gov_comeword">来源：<stl:content type="Source"></stl:content></p>
+									 <a id="closewindow" href="javascript:window.opener=null;window.open('','_self');window.close();">【关闭窗口】</a>
+									 <a href="#" onclick="javascript:window.print();" class="gov_print">【打印文章】</a>
+									 <p class="gov_sysbox"><span class="index_switchsize">【字体：<span class="bigger">大</span>&nbsp;&nbsp;<span class="medium">中</span>&nbsp;&nbsp;<span class="smaller">小</span></span>】</p>
+							 </div>
+						 </div>
+						 <!-- END Xl Head -->
+						 <!-- PageContent -->
+						 <div class="pages_content" id="UCAP-CONTENT">
+							 <p><stl:content type="Content"></stl:content></p>
+						 </div>
+						 <!-- END PageContent -->
+           </div>
+					 <!-- 尾部 -->
+					 <stl:include file="/include/footer.html"></stl:include>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{Stl.SiteUrl}/static/js/jquery-1.9.1.min.js"></script>
+  <script src="{Stl.SiteUrl}/static/js/js.js"></script>
+</body>
+</html>

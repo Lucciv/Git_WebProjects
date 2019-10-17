@@ -1,0 +1,62 @@
+<div class="head">
+	<!-- 导航 -->
+	<div class="headbox">
+		<div class="head_logo"></div>
+		<div class="head_nav">
+			<!-- Nav -->
+			<div class="nav_box">
+				<ul class="nav_list">
+          <li><stl:a channelIndex="首页" target="_blank"><stl:channel></stl:channel></stl:a><span></span></li>
+          <stl:channels channelIndex="首页" totalNum="7" groupChannel="Head导航">
+            <li><stl:a target="_blank"><stl:channel></stl:channel></stl:a><span></span></li>
+          </stl:channels>
+				</ul>
+				<div class="jcy_navhorn_left"></div>
+				<div class="jcy_navhorn_right"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END 导航 -->
+	<!-- 滚动条 -->
+	<div class="box">
+		<div class="jcy_dtow_box">
+	    <div class="jcy_dtow_leftbox fl">
+	      <!-- SysTime -->
+	      <p class="pDate"><stl:value type="DateOfTraditional" isDynamic="false"></stl:value></p>
+	      <!-- Line -->
+	      <div class="jcy_line"></div>
+	    </div>
+	    <div class="jcy_dtow_rightbox">
+	      <div class="jcy_dtowaw_left">
+	        <!-- Roll -->
+	        <div class="jcy_rollbox">
+	          <p class="jcy_rollmaintext">最新通知：</p>
+	          <div id="rolldemoN1" class="jcy_rollmain">
+	            <div class="jcy_rollqimo">
+	              <div id="rolldemoB1">
+	                <ul>
+										<stl:contents channelIndex="通知通告">
+										<li><stl:a target="_blank"><stl:content></stl:content></stl:a></li>
+										</stl:contents>
+	                </ul>
+	              </div>
+	              <div id="rolldemoB2">
+	                <ul>
+										<stl:contents channelIndex="通知通告">
+										<li><stl:a target="_blank"><stl:content></stl:content></stl:a></li>
+										</stl:contents>
+	                </ul>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="jcy_dtowaw_right fr">
+					<stl:a channelIndex="电子邮箱" class="jcy_emailbox">电子邮箱</stl:a>
+	      </div>
+	    </div>
+	  </div>
+		<div class="jcy_yinying"><img src="{Stl.SiteUrl}/static/images/yinyingbg.png" alt=""></div>
+	</div>
+	<!-- END滚动条 -->
+</div>
