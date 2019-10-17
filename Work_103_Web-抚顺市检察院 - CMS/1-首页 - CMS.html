@@ -1,248 +1,244 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="gb2312">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>{Stl.SiteName}</title>
-		<link href="{Stl.SiteUrl}/static/css/css.css" rel="stylesheet">
-		<link rel="shortcut icon" href="{Stl.SiteUrl}/static/images/favicon.ico">
-		<!-- meta -->
-		<meta name="SiteName" content="抚顺市检察院">
-		<meta name="ContentSource" content="抚顺市检察院">
-	</head>
+  <head>
+    <meta charset="gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{Stl.SiteName}</title>
+    <link href="{Stl.SiteUrl}/static/css/css.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{Stl.SiteUrl}/static/images/favicon.ico">
+    <!-- meta -->
+    <meta name="SiteName" content="抚顺市检察院">
+    <meta name="ContentSource" content="抚顺市检察院">
+    <meta name="SiteDomain" content="">
+    <meta name="SiteIDCode" content="">
+    <meta name="ColumnName" content="">
+    <meta name="ColumnType" content="">
+    <meta name="ArticleTitle" content="">
+    <meta name="PubDate" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+  </head>
 
-	<body class="jcy_body_bg">
-		<!-- 头部 -->
-		<stl:include file="/include/head.html"></stl:include>
+  <body class="jcy_body_bg">
+    <!-- 头部 -->
+    <stl:include file="/include/head.html"></stl:include>
 
-		<!-- Index -->
-		<div class="jcy_bg">
-			<div class="box">
-				<div class="index_content">
-					<div class="index_left">
-						<div class="index_op ra index_mp">
-							<!-- 轮播图 -->
-							<div class="hiSlideBox">
-								<stl:focusviewer channelIndex="抚顺检察要闻" titleWordNum="30" scope="All" width="400" height="300" totalNum="4" theme="Style2" bgColor="#333333" isTopText="false"></stl:focusviewer>
-							</div>
-							<!-- END轮播图 -->
-							<!-- 抚顺检察要闻 -->
-							<div class="sjyw">
-								<div class="jcy_title">
-									<b></b><h2><stl:channel channelIndex="抚顺检察要闻"></stl:channel></h2>
-									<a title="" href="{Channel.NavigationUrl_抚顺检察要闻}" target="_blank">更多&gt;&gt;</a>
-								</div>
-								<div class="jcy_mainnews_box">
-									<p><stl:content wordNum="15" channelIndex="抚顺检察要闻"></stl:content></p>
-									<stl:a target="_blank"><stl:content type="Title" wordNum="60"></stl:content><span>[查看详情]</span></stl:a>
-								</div>
-								<ul class="jcy_list">
-									<stl:contents channelIndex="抚顺检察要闻" totalNum="5">
-									<li>
-										<i></i><stl:a target="_blank"><stl:content type="Title" wordNum="40"></stl:content></stl:a><div class="newicon"></div>
-										<span><stl:content type="AddDate" formatString="MM-dd"></stl:content></span>
-									</li>
-									</stl:contents>
-								</ul>
-							</div>
-							<!-- END抚顺检察要闻 -->
-						</div>
-						<!-- 滚动条 -->
-						<div class="jcy_mi_box">
-							<div class="jcy_mi_leftbox fl">
-								<div class="jcy_miicon">密</div>
-								<p>涉密信息不上网，上网信息不涉密！</p>
-							</div>
-							<div class="jcy_mi_rightbox">
-								<div class="jcy_miaw_left">
-									<!-- Roll -->
-									<div class="jcy_rollbox2">
-										<p class="jcy_rollmaintext2">7天内更新的部门有：</p>
-										<div id="rolldemoN2" class="jcy_rollmain2">
-										  <div class="jcy_rollqimo2">
-										    <div id="rolldemoS1">
-										      <ul>
-														<stl:channels channelIndex="职能部门">
-						                <stl:if testType="CountOfContents" testOperate="GreatThan" testValue="0">
-						                <stl:successTemplate>
-						                <li>
-						                  <stl:a target="_blank"><stl:channel></stl:channel>（<stl:count type="Contents" since="7d" scope="all"></stl:count>）</stl:a>
-						                </li>
-						                </stl:successTemplate>
-						                <stl:failureTemplate>
-						                </stl:failureTemplate>
-						                </stl:if>
-						                </stl:channels>
-										      </ul>
-										    </div>
-										    <div id="rolldemoS2">
-										      <ul>
-														<stl:channels channelIndex="职能部门">
-						                <stl:if testType="CountOfContents" testOperate="GreatThan" testValue="0">
-						                <stl:successTemplate>
-						                <li>
-						                  <stl:a target="_blank"><stl:channel></stl:channel>（<stl:count type="Contents" since="7d" scope="all"></stl:count>）</stl:a>
-						                </li>
-						                </stl:successTemplate>
-						                <stl:failureTemplate>
-						                </stl:failureTemplate>
-						                </stl:if>
-						                </stl:channels>
-										      </ul>
-										    </div>
-										  </div>
-										</div>
-									</div>
-								</div>
-								<div class="jcy_searchbox_right fr">
-									<div class="jcy_searchline"></div>
-									<div class="jcy_searchformbox">
-						      	<stl:searchInput>
-							      	<span class="jcy_sftext"> 站内搜索：
-								        <input type="text" name="word" id="word" placeholder="请输入关键词..." class="jcy_sfinput"/>
-								        <input name="button" type="submit" class="jcy_searbtn"  id="submit" value=" " >
-							        </span>
-						        </stl:searchInput>
-						      </div>
-								</div>
-								<div class="jcy_mihornbox"></div>
-							</div>
-						</div>
-						<!-- END滚动条 -->
-						<!-- 通知通告 and 队伍建设 -->
-						<div class="mbox">
-							<!-- 通知通告 -->
-							<div class="index_mbox ra index_mp mbox_left">
-								<div class="jcy_title2">
-								  <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="通知通告"></stl:channel></td><td></td></tr></tbody></table><b></b>
-									<a href="{Channel.NavigationUrl_通知通告}" target="_blank">更多&gt;&gt;</a>
-								</div>
-								<ul class="jcy_list jli">
-									<stl:contents channelIndex="通知通告" totalNum="7">
-									<li><i></i><stl:a target="_blank"><stl:content type="Title" wordNum="40"></stl:content></stl:a><div class="newicon"></div></li>
-									</stl:contents>
-								</ul>
-							</div>
-							<!-- 队伍建设 -->
-							<div class="index_mbox ra index_mp mbox_right">
-								<div class="jcy_title2">
-								  <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="队伍建设"></stl:channel></td><td></td></tr></tbody></table><b></b>
-									<a href="{Channel.NavigationUrl_队伍建设}" target="_blank">更多&gt;&gt;</a>
-								</div>
-								<ul class="jcy_list jli">
-									<stl:contents channelIndex="队伍建设" totalNum="7">
-									<li><i></i><stl:a target="_blank"><stl:content type="Title" wordNum="40"></stl:content></stl:a><div class="newicon"></div></li>
-									</stl:contents>
-								</ul>
-							</div>
-						</div>
-						<!-- 检察视角 and 检察简报 -->
-						<div class="mbox">
-							<!-- 检察视角 -->
-							<div class="index_mbox ra index_mp mbox_left">
-								<div class="jcy_title2">
-								  <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="检察视角"></stl:channel></td><td></td></tr></tbody></table><b></b>
-									<a href="{Channel.NavigationUrl_检察视角}" target="_blank">更多&gt;&gt;</a>
-								</div>
-								<ul class="jcy_list jli">
-									<stl:contents channelIndex="检察视角" totalNum="7">
-									<li><i></i><stl:a target="_blank"><stl:content type="Title" wordNum="40"></stl:content></stl:a><div class="newicon"></div></li>
-									</stl:contents>
-								</ul>
-							</div>
-							<!-- 检察简报 -->
-							<div class="index_mbox ra index_mp mbox_right">
-								<div class="jcy_title2">
-								  <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="检察简报"></stl:channel></td><td></td></tr></tbody></table><b></b>
-									<a href="{Channel.NavigationUrl_检察简报}" target="_blank">更多&gt;&gt;</a>
-								</div>
-								<ul class="jcy_list jli">
-									<stl:contents channelIndex="检察简报" totalNum="7">
-									<li><i></i><stl:a target="_blank"><stl:content type="Title" wordNum="40"></stl:content></stl:a><div class="newicon"></div></li>
-									</stl:contents>
-								</ul>
-							</div>
-						</div>
-						<!-- 应用系统 -->
-						<div class="yyxtbox ra index_mp">
-							<div class="jcy_title2 mb2">
-							  <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="应用系统"></stl:channel></td><td></td></tr></tbody></table><b></b>
-								<a href="{Channel.NavigationUrl_应用系统}" target="_blank">更多&gt;&gt;</a>
-							</div>
-							<ul class="yyxt_link">
-								<stl:channels channelIndex="应用系统">
-								<li><stl:a target="_blank"><stl:channel type="ImageUrl"></stl:channel></stl:a></li>
-								</stl:channels>
-							</ul>
-						</div>
-						<!-- 职能部门 -->
-						<div class="znbmbox ra index_mp">
-							<div class="jcy_title2 mb2">
-							  <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="职能部门"></stl:channel></td><td></td></tr></tbody></table><b></b>
-							</div>
-							<div class="mods-body">
-								<ul>
-									<stl:channels channelIndex="职能部门">
-									<li><stl:a target="_blank"><stl:channel></stl:channel></stl:a></li>
-									</stl:channels>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="index_right">
-						<!-- 最近更新 -->
-						<div class="ryc ra index_mp2">
-							<div class="jcy_title rpt"><b></b><h2>最近更新</h2></div>
-							<div class="jq22">
-								<ul class="jcy_rlist">
-									<stl:contents scope="All" totalNum="20">
-										<li><i></i><stl:a target="_blank"><stl:content type="Title"></stl:content></stl:a></li>
-									</stl:contents>
-								</ul>
-							</div>
-						</div>
-						<!-- END最近更新 -->
-						<!-- 专题专栏 -->
-						<div class="mode ra index_mp2">
-							<div class="jcy_title mb2"><b></b><h2><stl:channel channelIndex="专题专栏"></stl:channel></h2></div>
-							<div class="mode-body">
-								<ul>
-									<stl:channels channelIndex="专题专栏">
-									<li><stl:a target="_blank"><stl:channel type="ImageUrl"></stl:channel></stl:a></li>
-									</stl:channels>
-								</ul>
-							</div>
-						</div>
-						<div class="mlbox">
-							<!-- 电子邮箱 -->
-							<div class="mlpic"><stl:a channelIndex="电子邮箱" target="_blank"><stl:channel channelIndex="电子邮箱" type="ImageUrl"></stl:channel></stl:a></div>
-							<!-- 信息化专栏 -->
-							<div class="mlpic"><stl:a channelIndex="信息化专栏" target="_blank"><stl:channel channelIndex="信息化专栏" type="ImageUrl"></stl:channel></stl:a></div>
-							<!-- 休闲娱乐 -->
-							<div class="mlpic"><stl:a channelIndex="休闲娱乐" target="_blank"><stl:channel channelIndex="休闲娱乐" type="ImageUrl"></stl:channel></stl:a></div>
-						</div>
-						<!-- 网站链接 -->
-						<div class="mode ra index_mp2">
-							<div class="jcy_title mb1"><b></b><h2><stl:channel channelIndex="网站链接"></stl:channel></h2></div>
-							<div class="mode-body mb">
-								<stl:select channelIndex="最高检" isChannel="false" title="最高检"></stl:select>
-								<stl:select channelIndex="省院" isChannel="false" title="省院"></stl:select>
-								<stl:select channelIndex="各市院" isChannel="false" title="各市院"></stl:select>
-								<stl:select channelIndex="下级院" isChannel="false" title="下级院"></stl:select>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END Index -->
+    <!-- Index -->
+    <div class="jcy_bg">
+      <div class="box">
+        <div class="index_content">
+          <div class="index_left">
+            <div class="index_op ra index_mp">
+              <!-- 轮播图 -->
+              <div class="hiSlideBox">
+                <stl:focusviewer channelIndex="抚顺检察要闻" titleWordNum="30" scope="All" width="400" height="300" totalNum="4" theme="Style2" bgColor="#333333" isTopText="false"></stl:focusviewer>
+              </div>
+              <!-- END轮播图 -->
+              <!-- 抚顺检察要闻 -->
+              <div class="sjyw">
+                <div class="jcy_title">
+                  <b></b><h2><stl:channel channelIndex="抚顺检察要闻"></stl:channel></h2>
+                  <a title="" href="{Channel.NavigationUrl_抚顺检察要闻}" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <div class="jcy_mainnews_box">
+                  <p><stl:content wordNum="15" channelIndex="抚顺检察要闻"></stl:content></p>
+                  <stl:a target="_blank"><stl:content type="Title" wordNum="60"></stl:content><span>[查看详情]</span></stl:a>
+                </div>
+                <ul class="jcy_list">
+                  <stl:contents channelIndex="抚顺检察要闻" totalNum="5">
+                  <li>
+                    <i></i><stl:a target="_blank"><stl:content type="Title" wordNum="60"></stl:content></stl:a><div class="newicon"></div>
+                    <span><stl:content type="AddDate" formatString="MM-dd"></stl:content></span>
+                  </li>
+                  </stl:contents>
+                </ul>
+              </div>
+              <!-- END抚顺检察要闻 -->
+            </div>
+            <!-- 滚动条 -->
+            <div class="jcy_mi_box">
+              <div class="jcy_mi_leftbox fl">
+                <div class="jcy_miicon">密</div>
+                <p>涉密信息不上网，上网信息不涉密！</p>
+              </div>
+              <div class="jcy_mi_rightbox">
+                <div class="jcy_miaw_left">
+                  <!-- Roll -->
+                  <div class="jcy_rollbox2">
+                    <p class="jcy_rollmaintext2">7天内更新的部门有：</p>
+                    <div id="rolldemoN2" class="jcy_rollmain2">
+                      <div class="jcy_rollqimo2">
+                        <div id="rolldemoS1">
+                          <ul>
+                            <stl:channels channelIndex="职能部门">
+                            <li>
+                              <stl:a target="_blank"><stl:channel></stl:channel>（<span><stl:count type="Contents" since="7d" scope="all"></stl:count></span>）</stl:a>
+                            </li>
+                            </stl:channels>
+                          </ul>
+                        </div>
+                        <div id="rolldemoS2">
+                          <ul>
+                            <stl:channels channelIndex="职能部门">
+                            <li>
+                              <stl:a target="_blank"><stl:channel></stl:channel>（<span><stl:count type="Contents" since="7d" scope="all"></stl:count></span>）</stl:a>
+                            </li>
+                            </stl:channels>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="jcy_searchbox_right fr">
+                  <div class="jcy_searchline"></div>
+                  <div class="jcy_searchformbox">
+                    <stl:searchInput>
+                      <span class="jcy_sftext"> 站内搜索：
+                        <input type="text" name="word" id="word" placeholder="请输入关键词..." class="jcy_sfinput"/>
+                        <input name="button" type="submit" class="jcy_searbtn"  id="submit" value=" " >
+                      </span>
+                    </stl:searchInput>
+                  </div>
+                </div>
+                <div class="jcy_mihornbox"></div>
+              </div>
+            </div>
+            <!-- END滚动条 -->
+            <!-- 通知通告 and 队伍建设 -->
+            <div class="mbox">
+              <!-- 通知通告 -->
+              <div class="index_mbox ra index_mp mbox_left">
+                <div class="jcy_title2">
+                  <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="通知通告"></stl:channel></td><td></td></tr></tbody></table><b></b>
+                  <a href="{Channel.NavigationUrl_通知通告}" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <ul class="jcy_list jli">
+                  <stl:contents channelIndex="通知通告" totalNum="7">
+                  <li><i></i><stl:a target="_blank"><stl:content type="Title" wordNum="40"></stl:content></stl:a><div class="newicon"></div></li>
+                  </stl:contents>
+                </ul>
+              </div>
+              <!-- 队伍建设 -->
+              <div class="index_mbox ra index_mp mbox_right">
+                <div class="jcy_title2">
+                  <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="队伍建设"></stl:channel></td><td></td></tr></tbody></table><b></b>
+                  <a href="{Channel.NavigationUrl_队伍建设}" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <ul class="jcy_list jli">
+                  <stl:contents channelIndex="队伍建设" totalNum="7">
+                  <li><i></i><stl:a target="_blank"><stl:content type="Title" wordNum="40"></stl:content></stl:a><div class="newicon"></div></li>
+                  </stl:contents>
+                </ul>
+              </div>
+            </div>
+            <!-- 检察视角 and 检察简报 -->
+            <div class="mbox">
+              <!-- 检察视角 -->
+              <div class="index_mbox ra index_mp mbox_left">
+                <div class="jcy_title2">
+                  <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="检察视角"></stl:channel></td><td></td></tr></tbody></table><b></b>
+                  <a href="{Channel.NavigationUrl_检察视角}" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <ul class="jcy_list jli">
+                  <stl:contents channelIndex="检察视角" totalNum="7">
+                  <li><i></i><stl:a target="_blank"><stl:content type="Title" wordNum="40"></stl:content></stl:a><div class="newicon"></div></li>
+                  </stl:contents>
+                </ul>
+              </div>
+              <!-- 检察简报 -->
+              <div class="index_mbox ra index_mp mbox_right">
+                <div class="jcy_title2">
+                  <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="检察简报"></stl:channel></td><td></td></tr></tbody></table><b></b>
+                  <a href="{Channel.NavigationUrl_检察简报}" target="_blank">更多&gt;&gt;</a>
+                </div>
+                <ul class="jcy_list jli">
+                  <stl:contents channelIndex="检察简报" totalNum="7">
+                  <li><i></i><stl:a target="_blank"><stl:content type="Title" wordNum="40"></stl:content></stl:a><div class="newicon"></div></li>
+                  </stl:contents>
+                </ul>
+              </div>
+            </div>
+            <!-- 应用系统 -->
+            <div class="yyxtbox ra index_mp">
+              <div class="jcy_title2 mb2">
+                <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="应用系统"></stl:channel></td><td></td></tr></tbody></table><b></b>
+                <a href="{Channel.NavigationUrl_应用系统}" target="_blank">更多&gt;&gt;</a>
+              </div>
+              <ul class="yyxt_link">
+                <stl:channels channelIndex="应用系统">
+                <li><stl:a target="_blank"><stl:channel type="ImageUrl"></stl:channel></stl:a></li>
+                </stl:channels>
+              </ul>
+            </div>
+            <!-- 职能部门 -->
+            <div class="znbmbox ra index_mp">
+              <div class="jcy_title2 mb2">
+                <table cellspacing="0"><tbody><tr><td></td><td class="rz"><stl:channel channelIndex="职能部门"></stl:channel></td><td></td></tr></tbody></table><b></b>
+              </div>
+              <div class="mods-body">
+                <ul>
+                  <stl:channels channelIndex="职能部门">
+                  <li><stl:a target="_blank"><stl:channel></stl:channel></stl:a></li>
+                  </stl:channels>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="index_right">
+            <!-- 最近更新 -->
+            <div class="ryc ra index_mp2">
+              <div class="jcy_title rpt"><b></b><h2>最近更新</h2></div>
+              <div class="jq22">
+                <ul class="jcy_rlist">
+                  <stl:contents scope="All" totalNum="20">
+                    <li><i></i><stl:a target="_blank"><stl:content type="Title"></stl:content></stl:a></li>
+                  </stl:contents>
+                </ul>
+              </div>
+            </div>
+            <!-- END最近更新 -->
+            <!-- 专题专栏 -->
+            <div class="mode ra index_mp2">
+              <div class="jcy_title mb2"><b></b><h2><stl:channel channelIndex="专题专栏"></stl:channel></h2></div>
+              <div class="mode-body">
+                <ul>
+                  <stl:channels channelIndex="专题专栏">
+                  <li><stl:a target="_blank"><stl:channel type="ImageUrl"></stl:channel></stl:a></li>
+                  </stl:channels>
+                </ul>
+              </div>
+            </div>
+            <div class="mlbox">
+              <!-- 电子邮箱 -->
+              <div class="mlpic"><stl:a channelIndex="电子邮箱" target="_blank"><stl:channel channelIndex="电子邮箱" type="ImageUrl"></stl:channel></stl:a></div>
+              <!-- 信息化专栏 -->
+              <div class="mlpic"><stl:a channelIndex="信息化专栏" target="_blank"><stl:channel channelIndex="信息化专栏" type="ImageUrl"></stl:channel></stl:a></div>
+              <!-- 休闲娱乐 -->
+              <div class="mlpic"><stl:a channelIndex="休闲娱乐" target="_blank"><stl:channel channelIndex="休闲娱乐" type="ImageUrl"></stl:channel></stl:a></div>
+            </div>
+            <!-- 各检链接 -->
+            <div class="mode ra index_mp2">
+              <div class="jcy_title mb1"><b></b><h2><stl:channel channelIndex="各检链接"></stl:channel></h2></div>
+              <div class="mode-body mb">
+                <stl:select channelIndex="最高检" isChannel="false" title="最高检"></stl:select>
+                <stl:select channelIndex="省院" isChannel="false" title="省院"></stl:select>
+                <stl:select channelIndex="各市院" isChannel="false" title="各市院"></stl:select>
+                <stl:select channelIndex="下级院" isChannel="false" title="下级院"></stl:select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Index -->
 
-		<!-- 尾部 -->
-		<stl:include file="/include/footer.html"></stl:include>
+    <!-- 尾部 -->
+    <stl:include file="/include/footer.html"></stl:include>
 
-		<script src="{Stl.SiteUrl}/static/js/jquery-1.9.1.min.js"></script><!-- JQuery -->
-		<script src="{Stl.SiteUrl}/static/js/ScrollBar.js"></script><!-- ScrollBar Js -->
-		<script src="{Stl.SiteUrl}/static/js/js.js"></script><!-- Js -->
-		<script src="{Stl.SiteUrl}/static/js/SurSlide.js"></script><!-- SurSlide Js -->
-	</body>
+    <script src="{Stl.SiteUrl}/static/js/jquery-1.9.1.min.js"></script><!-- JQuery -->
+    <script src="{Stl.SiteUrl}/static/js/ScrollBar.js"></script><!-- ScrollBar Js -->
+    <script src="{Stl.SiteUrl}/static/js/js.js"></script><!-- Js -->
+    <script src="{Stl.SiteUrl}/static/js/SurSlide.js"></script><!-- SurSlide Js -->
+  </body>
 </html>
