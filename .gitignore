@@ -1,7 +1,7 @@
 images/
-static/js/jquery-1.9.1.min.js
-static/js/js.js
-static/js/SurSlide.js
-static/js/SurTab.js
-static/js/ScrollBar.js
-static/js/ie-css3.htc
+js/jquery-1.9.1.min.js
+js/js.js
+js/SurSlide.js
+js/SurTab.js
+js/ScrollBar.js
+js/ie-css3.htc
