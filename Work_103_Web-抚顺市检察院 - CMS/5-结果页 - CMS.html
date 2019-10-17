@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="gb2312">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>{Stl.SiteName}</title>
+	<link href="{Stl.SiteUrl}/static/css/css.css" rel="stylesheet">
+	<link rel="shortcut icon" href="{Stl.SiteUrl}/static/images/favicon.ico">
+	<!-- meta -->
+	<meta name="SiteName" content="抚顺市检察院">
+	<meta name="ContentSource" content="抚顺市检察院">
+</head>
+<body class="jcy_body_bg">
+  <!-- 头部 -->
+	<stl:include file="/include/head.html"></stl:include>
+
+  <div class="jcy_content">
+    <div class="jcy_main">
+      <div class="govtjjcgxl-content">
+        <div class="govtjjcgxl-main">
+           <!-- GovCurrentBox -->
+           <div class="govtjjcgxl-currbox mb1">当前位置：<stl:location separator="&nbsp;&nbsp;&gt;&nbsp;&nbsp;"></stl:location></div>
+           <!-- END GovCurrentBox -->
+           <div class="govtjjxlct-box mb5">
+            <p class="govtjjcgxl-titletext mb3"><stl:channel></stl:channel></p>
+						<stl:searchOutput isHighlight="true" isDefaultDisplay="true">
+						<stl:successTemplate>
+            <!-- GovList -->
+            <ul class="gxl_list">
+							<stl:pageContents cellpadding="0" pageNum="25" cellspacing="0" scope="SelfAndChildren" order="AddDate">
+              <li>
+								<stl:a><stl:content type="Title" wordNum="40"  target="_blank"></stl:content></stl:a>
+                <span><stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content></span>
+              </li>
+							</stl:pageContents>
+            </ul>
+            <!-- END GovList -->
+            <!-- Page -->
+						<stl:pageItems>
+							<div class="pagebox">
+			          <ul>
+			            <stl:pageItem type="FirstPage">
+			              <stl:successTemplate>
+			                <li>
+			                  <a href="{Current.Url}">&lt; 最前页</a>
+			                </li>
+			              </stl:successTemplate>
+			              <stl:failureTemplate>
+			                <li class="current"><span class="disabled">&lt; 最前页</span></li>
+			              </stl:failureTemplate>
+			            </stl:pageItem>
+			            <stl:pageItem type="PreviousPage">
+			              <stl:successTemplate>
+			                <li>
+			                  <a href="{Current.Url}">&lt; 上一页</a>
+			                </li>
+			              </stl:successTemplate>
+			              <stl:failureTemplate>
+			                <li class="current"><span class="disabled">&lt; 上一页</span></li>
+			              </stl:failureTemplate>
+			            </stl:pageItem>
+			            <stl:pageItem type="PageNavigation" listNum="5">
+			              <stl:successTemplate>
+			                <li>
+			                  <a href="{Current.Url}">{Current.Num}</a>
+			                </li>
+			              </stl:successTemplate>
+			              <stl:failureTemplate>
+			                <li class="current">{Current.Num}</li>
+			              </stl:failureTemplate>
+			            </stl:pageItem>
+			            <stl:pageItem type="NextPage">
+			              <stl:successTemplate>
+			                <li>
+			                  <a href="{Current.Url}">下一页 &gt;</a>
+			                </li>
+			              </stl:successTemplate>
+			              <stl:failureTemplate>
+			                <li class="current"><span class="disabled">下一页 &gt;</span></li>
+			              </stl:failureTemplate>
+			            </stl:pageItem>
+			            <stl:pageItem type="LastPage">
+			              <stl:successTemplate>
+			                <li>
+			                  <a href="{Current.Url}">最后页 &gt;</a>
+			                </li>
+			              </stl:successTemplate>
+			              <stl:failureTemplate>
+			                <li class="current"><span class="disabled">最后页 &gt;</span></li>
+			              </stl:failureTemplate>
+			            </stl:pageItem>
+			          </ul>
+		          </div>
+		        </stl:pageItems>
+  					<!-- END Page -->
+						</stl:successTemplate>
+						<stl:failureTemplate>
+							<div class="content-body govtjjxlct-box mb5">抱歉，找不到和您的查询相符的项目。</div>
+						</stl:failureTemplate>
+						</stl:searchOutput>
+           </div>
+
+					 <!-- 尾部 -->
+					 <stl:include file="/include/footer.html"></stl:include>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="{Stl.SiteUrl}/static/js/jquery-1.9.1.min.js"></script>
+<script src="{Stl.SiteUrl}/static/js/js.js"></script>
+</html>

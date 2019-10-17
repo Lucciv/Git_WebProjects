@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="gb2312">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>抚顺市检察院 - 首页</title>
+		<title>{Stl.SiteName}</title>
 		<link href="{Stl.SiteUrl}/static/css/css.css" rel="stylesheet">
 		<link rel="shortcut icon" href="{Stl.SiteUrl}/static/images/favicon.ico">
 		<!-- meta -->
@@ -96,12 +96,14 @@
 								</div>
 								<div class="jcy_searchbox_right fr">
 									<div class="jcy_searchline"></div>
-									<form action="" class="jcy_searchformbox">
-										<label class="jcy_sftext">站内检索：</label>
-										<input type="text" class="jcy_sfinput" placeholder="请输入关键字...">
-										<div class="jcy_searcion"></div>
-										<button class="jcy_searbtn"></button>
-									</form>
+									<div class="jcy_searchformbox">
+						      	<stl:searchInput>
+							      	<span class="jcy_sftext"> 站内搜索：
+								        <input type="text" name="word" id="word" placeholder="请输入关键词..." class="jcy_sfinput"/>
+								        <input name="button" type="submit" class="jcy_searbtn"  id="submit" value=" " >
+							        </span>
+						        </stl:searchInput>
+						      </div>
 								</div>
 								<div class="jcy_mihornbox"></div>
 							</div>
