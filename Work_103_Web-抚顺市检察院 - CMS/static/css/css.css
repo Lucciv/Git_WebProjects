@@ -136,7 +136,8 @@ a img,img,embed,object{border:none;vertical-align:middle;}
 .jcy_mi_leftbox p { font-size: 14px; line-height: 34px; padding-left: 52px; color: #fff; }
 .jcy_mi_rightbox { position: absolute; top: 0; right: 0; left: 295px; height: 34px; background: url(../images/mibg2.png) repeat-x; }
 .jcy_mihornbox { position: absolute; top: 0; right: 0; width: 5px; height: 34px; background: url(../images/mirighthorn.png) no-repeat; }
-.jcy_miaw_left { position: absolute; top: 0; right: 359px; }
+.jcy_miaw_left { position: absolute; top: 0; left: 0px; }
+
 .jcy_rollbox2 { line-height: 34px; height: 34px; padding-left: 20px; }
 .jcy_rollmain2 { overflow: hidden; }
 .jcy_rollqimo2 { width: 8000%; }
@@ -145,6 +146,7 @@ a img,img,embed,object{border:none;vertical-align:middle;}
 .jcy_rollmain2 .jcy_rollqimo2 ul li { float: left; list-style: none; }
 .jcy_rollmain2 li a { font-size: 14px; margin-right: 10px; padding-right: 20px; color: #fff; }
 .jcy_rollmaintext2 { font-size: 14px; float: left; padding-right: 10px; color: #fff; }
+
 .jcy_searchbox_right { line-height: 34px; position: relative; width: 329px; height: 34px; padding-right: 20px; }
 .jcy_searchline { position: absolute; top: 3px; left: 15px; width: 2px; height: 29px; background: url(../images/navline.png) no-repeat; }
 .jcy_searchformbox { position: absolute; top: 0; left: 45px; width: 275px; }
