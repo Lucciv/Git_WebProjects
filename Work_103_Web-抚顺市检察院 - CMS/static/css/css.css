@@ -125,10 +125,10 @@ a img,img,embed,object{border:none;vertical-align:middle;}
 
 .yyxtbox{overflow: hidden; position: relative;min-height: 170px;background-color: #fff;}
 .yyxt_link{width: 100%; overflow: hidden;margin-top: 16px;}
-.yyxt_link li{float: left;margin: 10px 12px;}
-.yyxt_link a{display: block;width: 167px; height: 36px;background-color: skyblue;}
+.yyxt_link li{float: left;margin: 8px;}
+.yyxt_link a{display: block;width: 200px; height: 50px;}
 .index_img{width: 100%; overflow: hidden;margin-bottom: 10px;}
-.index_img img{width: 100%;height: auto;background-color: skyblue;}
+.index_img img{width: 100%;height: auto;}
 
 .jcy_mi_box { position: relative; overflow: hidden; width: 100%; height: 34px;margin-bottom: 10px; }
 .jcy_mi_leftbox { position: relative; width: 295px; background: url(../images/mibg1.png) repeat-x; }
