@@ -62,34 +62,18 @@
                 <p>涉密信息不上网，上网信息不涉密！</p>
               </div>
               <div class="jcy_mi_rightbox">
-                <div class="jcy_miaw_left">
-                  <!-- Roll -->
-                  <div class="jcy_rollbox2">
-                    <p class="jcy_rollmaintext2">7天内更新的部门有：</p>
-                    <div id="rolldemoN2" class="jcy_rollmain2">
-                      <div class="jcy_rollqimo2">
-                        <div id="rolldemoS1">
-                          <ul>
-                            <stl:channels channelIndex="职能部门">
-                            <li>
-                              <stl:a target="_blank"><stl:channel></stl:channel>（<span><stl:count type="Contents" since="7d" scope="all"></stl:count></span>）</stl:a>
-                            </li>
-                            </stl:channels>
-                          </ul>
-                        </div>
-                        <div id="rolldemoS2">
-                          <ul>
-                            <stl:channels channelIndex="职能部门">
-                            <li>
-                              <stl:a target="_blank"><stl:channel></stl:channel>（<span><stl:count type="Contents" since="7d" scope="all"></stl:count></span>）</stl:a>
-                            </li>
-                            </stl:channels>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <!-- Roll -->
+                <div class="jcy_scroll">
+  								<p>7天内更新的部门有：</p>
+  								<div class="rollBox">
+  									<div class="SurScroll">
+                      <stl:channels channelIndex="职能部门">
+                        <stl:a target="_blank"><stl:channel></stl:channel>（<span><stl:count type="Contents" since="7d" scope="all"></stl:count></span>）</stl:a>
+                      </stl:channels>
+  									</div>
+  								</div>
                 </div>
+								<!-- END Roll -->
                 <div class="jcy_searchbox_right fr">
                   <div class="jcy_searchline"></div>
                   <div class="jcy_searchformbox">
@@ -241,8 +225,8 @@
     <stl:include file="/include/footer.html"></stl:include>
 
     <script src="{Stl.SiteUrl}/static/js/jquery-1.9.1.min.js"></script><!-- JQuery -->
-    <script src="{Stl.SiteUrl}/static/js/ScrollBar.js"></script><!-- ScrollBar Js -->
     <script src="{Stl.SiteUrl}/static/js/js.js"></script><!-- Js -->
+    <script src="{Stl.SiteUrl}/static/js/ScrollBar.js"></script><!-- ScrollBar Js -->
     <script src="{Stl.SiteUrl}/static/js/SurSlide.js"></script><!-- SurSlide Js -->
   </body>
 </html>
