@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*css reset*/
+body { margin: 0 auto; background-color: #fff; font-family: "Microsoft YaHei UI", "微软雅黑", \5FAE\8F6F\96C5\9ED1; font-size: 14px; color: #333; }
+a, a:link, a:visited, a:hover { text-decoration: none; font-family: "Microsoft YaHei UI", "微软雅黑", \5FAE\8F6F\96C5\9ED1; font-size: 14px; color: #333; }
+ul, li, p, a { margin: 0; padding: 0; list-style: none; }
+img { border: none; display: inline-block; }
+/*END css reset*/
+
+/*my css reset*/
+h1, h2, h3, h4, h5, p, a, span { margin: 0; padding: 0; font-weight: normal; font-size: 14px; color: #333; }
+iframe { margin: 0; padding: 0; display: block; }
+.fl { float: left; }
+.fr { float: right; }
+.mb1 { margin-bottom: 10px; }
+.mb2 { margin-bottom: 20px; }
+.mb3 { margin-bottom: 30px; }
+.mb3d5{margin-bottom: 35px;}
+.mb4 { margin-bottom: 40px; }
+.mb5 { margin-bottom: 50px; }
+a img,img,embed,object{border:none;vertical-align:middle;}
+/*END my css reset*/
+
+/*Header*/
+.box { overflow: hidden; width: 100%;position: relative; }
+.content{ max-width: 1200px;margin: 0 auto;overflow: hidden; }
+/* Head-Top */
+.head_top{ width: 100%;height: 40px;line-height: 40px;background-color: #fff; }
+/* Head-Logo */
+.top_logo { float: left; }
+.top_logo img { float: left;margin-top: 8px; }
+.top_logo a{ float: left;margin-left: 10px;font-size: 14px;color: #5f5e5e;display: block; }
+/* Head-Search */
+.top_search { float: right;margin-top: 7px; margin-right: 20px; width: 150px;height: 23px; position: relative;border: 1px solid #e6e6e6; }
+.top_search input.serinpt { height: 21px; width: 124px; border: none; color: #757574; font-size: 14px; position: absolute; top: 0px; left: 1px; }
+.top_search input.serbtn { height: 23px; width: 26px; border: none; cursor: pointer; position: absolute; top: 0px; right: 0px; background: url(../images/top_searchIcon.png) no-repeat;background-position: 6px 5px;background-color: #266e07; }
+/* Head-Mail */
+.top_mail { float: right; margin-right: 15px; }
+.top_mail img { float: left; margin-right: 7px; margin-top: 13px; }
+.top_mail a { line-height: 40px; float: left; font-size: 14px; }
+/* Head-Sys */
+.top_sys { float: right; }
+.top_sys a { font-size: 14px; }
+.top_sys img { float: left; margin-right: 7px; margin-top: 11px; }
+/* Head-Logo */
+.head_logo{ background: url(../images/LogoBg.jpg) no-repeat;background-position: top center;width: 100%; height: 323px; }
+/* Head-Nav */
+.head_nav { width: 100%; height: 57px;line-height: 61px;background-color: #266e07;position:relative; }
+.nav{ max-width: 1200px;margin: 0 auto;display: flex;justify-content: space-around; }
+.nav h3 a { display: block;font-size: 18px; color: #fff;height: 57px;padding: 0 25px;text-align: center; }
+.nav h3 a.nav_first { width: 120px;padding: 0;text-align: center; }
+.nav .m { float:left;position:relative;z-index:1; }
+.nav .sub { display:none;position:absolute;left:-3px;top:57px;z-index:1;width:120px;border-top:0;background-color:rgba(39, 89, 18, 0.8); margin-left: 5px;padding: 8px 0 12px 0; }
+.nav .sub li { text-align:center;margin-bottom:-1px; }
+.nav .sub li a { display:block;color:#fff;font-size:16px;line-height: 22px;padding: 8px 5px;width: 110px; }
+.nav .sub li a:hover { color:#fff;background-color: rgba(27, 62, 13, 0.8); }
+.nav .block { height:53px;width:120px;background:#275912;border-top: 4px solid #fff;position:absolute;left:0;top:0;overflow:hidden; margin-left: 5px; }
+/*END Header*/
+
+/*Index*/
+/*END Index*/
+
+/*Footer*/
+/*END Footer*/
