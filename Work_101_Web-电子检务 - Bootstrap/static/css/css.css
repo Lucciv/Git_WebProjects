@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/*css reset*/
+body { margin: 0 auto; background-color: #fff; font-family: "Microsoft YaHei UI", "微软雅黑", \5FAE\8F6F\96C5\9ED1; font-size: 16px; color: #333; }
+a, a:link, a:visited, a:hover { text-decoration: none; font-family: "Microsoft YaHei UI", "微软雅黑", \5FAE\8F6F\96C5\9ED1; font-size: 16px; color: #333; }
+ul, li, p, a { margin: 0; padding: 0; list-style: none; }
+img { border: none; display: inline-block; }
+/*END css reset*/
+
+/*my css reset*/
+h1, h2, h3, h4, h5, p, a, span { margin: 0; padding: 0; font-weight: normal; font-size: 16px; color: #333; }
+iframe { margin: 0; padding: 0; display: block; }
+/*END my css reset*/
+
+
+/* dzjw */
+/* Media */
+@media screen and (max-width: 1205px) {
+  .SurTabContent .SurTabBox ul{width: 905px;}
+}
+@media screen and (max-width: 905px) {
+  .SurTabContent .SurTabBox ul{width: 605px;}
+}
+/* Head */
+.dzjw_head{width: 100%; height: 80px;background: url(../images/dzjw_headbg.jpg) no-repeat;background-position: top center;}
+.dzjw_hcontent{max-width: 1920px;margin: 0 auto;}
+.dzjw_logo{width: 326px; height: 67px;background: url(../images/dzjw_headlogo.png) no-repeat;float: left;margin: 8px 0 0 30px;}
+.dzjw_adminBox{float: right;margin: 22px 80px 0 0;position: relative;cursor: pointer;}
+.dzjw_adminIcon{float: left;margin-right: 15px;width: 36px; height: 36px;background: url(../images/dzjw_admin.png) no-repeat;}
+.dzjw_adminBox>p{float: left;font-size: 14px; color: #fff;margin-top: 8px;}
+.dzjw_adminBox>p:first-of-type{font-size: 16px;margin: 6px 8px;}
+#dzjw_adminDownMenu{display: none;width: 110px; height: 115px;background: url(../images/dzjw_downmenubg.png) no-repeat;position: absolute;top: 42px; right: 107px;padding: 15px 0 0 0;z-index: 100;}
+#dzjw_adminDownMenu>a{display: block;font-size: 16px; color: #666;text-align: center;margin-top: 10px;}
+/* Content */
+.dzjw_box{width: 100%;overflow: hidden;background: url(../images/dzjw_bg.jpg) no-repeat;background-position: top center;}
+/* From */
+.dzjw_dfrom{width: 100%;display: flex;justify-content: center;}
+.dzjw_from{width: 786px;height: 46px;background-color: #fff;border: 1px solid #949494;margin: 40px 0;}
+.dzjw_btn{height: 44px;padding: 0 15px 0 20px;font-size: 18px;color: #666;border: none;border-radius: 0;border-right: 1px solid #d7d7d7;}
+.dzjw_text{height: 44px;font-size: 18px;color: #666;border: none;border-radius: 0;}
+.dzjw_scbtn{width: 132px;height: 38px;background: url(../images/dzjw_scbtn.png) no-repeat;font-size: 18px;color: #fff;border: none;border-radius: 0;margin-right: 4px;}
+.dzjw_scbtn:hover{color: #fff;}
+/* Nav */
+.SurTab .SurTabMenu { width: 100%;height: 82px;background: url(../images/dzjw_navbg.jpg) no-repeat;background-position: top center;margin-bottom: 40px;display: flex;justify-content: center; }
+.SurTab .SurTabMenu li { float: left; cursor: pointer; margin: 0 20px;height: 82px;border-top: 5px solid transparent; }
+.SurTab .SurTabMenu li:hover{ border-top: 5px solid #c3c3c3; }
+.SurTab .SurTabMenu li.on { border-top: 5px solid #6a9ed8; }
+.SurTab .SurTabMenu p { color: #fff;font-size: 20px;padding: 0 6px;height: 82px;line-height: 77px; }
+.SurTab .SurTabBox { overflow: hidden; width: 100%;display: flex;justify-content: center; }
+/* List */
+.SurTabBox ul{display: block;width: 1205px;padding-bottom: 40px;}
+.SurTabBox li{width: 277px; height: 139px;float: left;margin: 10px 12px;cursor: pointer;display:flex;align-items:center;justify-content: center;background-color: #fff;border-radius: 3px;border: 2px solid #e7e7e7;}
+.SurTabBox li:hover{border: 2px solid #6a9ed8;}
+.SurTabBox a{width: 277px; height: 139px;display:flex;align-items:center;padding-left: 40px;}
+.SurTabBox i{display: block;width: 58px; height: 58px;border-radius: 50%;background-color: #000;display: flex;justify-content: center;align-items: center;}
+.SurTabBox img{display: block;}
+.SurTabBox span{display: block;font-size: 20px; color: #666;width: 125px;margin-left: 30px;}
+/* Page */
+.dzjw_page{width: 100%; overflow: hidden;margin: -20px 0 30px 0;}
+.dzjw_page nav{display: flex;justify-content: center;}
+.dzjw_page ul>li>a, .dzjw_page ul>li>span{display: block;width: 8px;height: 24px;background-color: transparent;background: url(../images/dzjw_pagedot.png) no-repeat;border: none;font-size: 0px;margin: 0 10px;padding: 0;}
+.dzjw_page ul>li>a:hover, .dzjw_page ul>li>span:hover{background-color: transparent;background: url(../images/dzjw_pagedoth.png) no-repeat;}
+.dzjw_page ul>li:first-child>a, .dzjw_page ul>li:first-child>span,
+.dzjw_page ul>li:last-child>a, .dzjw_page ul>li:last-child>span{background: none;width: 22px;border: 1px solid #e1e1e1;background-color: #fff;border-radius: 0;}
+.dzjw_page ul>.active>a, .dzjw_page ul>.active>a:focus, .dzjw_page ul>.active>a:hover, .dzjw_page ul>.active>span, .dzjw_page ul>.active>span:focus, .dzjw_page ul>.active>span:hover{width: 8px;height: 24px;background-color: transparent;background: url(../images/dzjw_pagedoth.png) no-repeat;border: none;}
+.dzjw_page ul>li>a>span{padding: 0;margin: 0;display: block;text-align: center;font-size: 16px; color: #e5e5e5;}
+.dzjw_page ul>li:first-child>a:hover,.dzjw_page ul>li:last-child>a:hover{background-color: #f6f6f6;}
+/* END dzjw */
