@@ -64,10 +64,10 @@ a img,img,embed,object { border:none;vertical-align:middle; }
 .hiSlider li .hiSliderTitle { overflow: hidden; width: 95.5%; height: 50px; line-height: 50px;padding-left: 20px; background: rgba(0, 0, 0, .6); display: block; font-size: 18px; color: #fff; position: absolute; bottom: 0; left: 0; }
 .hiSlider li .hiSliderImg { width: 470px; height: 292px; display: block; }
 .hiSlider-pages, .hiSlider-title { position: absolute; z-index: 3; }
-.hiSlider-btn-prev, .hiSlider-btn-next { position: absolute; z-index: 5; top: 40%; height: 70px; width: 40px; background: url(../images/lbtprew.png) no-repeat; margin-top: -15px; text-indent: -200px; overflow: hidden; opacity: .8; filter: alpha(opacity:60); }
-.hiSlider-btn-prev { left: 0px; }
-.hiSlider-btn-next { right: 0px; background: url(../images/lbtnext.png) no-repeat; }
-.hiSlider-btn-prev:hover, .hiSlider-btn-next:hover { opacity: 1; filter: alpha(opacity:100); }
+.hiSlider-btn-prev, .hiSlider-btn-next { position: absolute; z-index: 5; top: 40%; height: 70px; width: 40px; background: url(../images/lbtprew.png) no-repeat; margin-top: -15px; text-indent: -200px; overflow: hidden; opacity: .3; filter: alpha(opacity:30); }
+.hiSlider-btn-prev { left: 1px; }
+.hiSlider-btn-next { right: 1px; background: url(../images/lbtnext.png) no-repeat; }
+.hiSlider-btn-prev:hover, .hiSlider-btn-next:hover { opacity: .8; filter: alpha(opacity:80); }
 .hiSlider-pages { bottom: 15px; right: 20px; text-align: right; }
 .hiSlider-pages a { height: 12px; width: 12px; margin: 0 4px; display: inline-block; overflow: hidden; text-indent: -100px; font-size: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.3); }
 .hiSlider-pages a.active { background: #ee0010; }
