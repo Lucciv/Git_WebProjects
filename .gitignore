@@ -1,16 +1,10 @@
 images/
 
-Work_103_Web-抚顺市检察院 - CMS/static/js/jquery-1.9.1.min.js
-
-Work_103_Web-抚顺市检察院 - CMS/static/js/ScrollBar.js
-Work_103_Web-抚顺市检察院 - CMS/static/js/ie-css3.htc
-
-Work_104_Web-辽宁省现代农业生产基地建设工程中心 - HTML/static/js/jquery-1.9.1.min.js
-Work_104_Web-辽宁省现代农业生产基地建设工程中心 - HTML/static/js/ScrollBar.js
-Work_104_Web-辽宁省现代农业生产基地建设工程中心 - HTML/static/js/SurSlide.js
-Work_104_Web-辽宁省现代农业生产基地建设工程中心 - HTML/static/js/time.js
-Work_104_Web-辽宁省现代农业生产基地建设工程中心 - HTML/static/js/SurNav.js
-Work_104_Web-辽宁省现代农业生产基地建设工程中心 - HTML/static/js/SurSNav.js
-Work_101_Web-电子检务 - Bootstrap/static/js/jquery-1.9.1.min.js
-Work_101_Web-电子检务 - Bootstrap/static/js/SurTab.js
-static/js/SurTab.js
+**/jquery-1.9.1.min.js
+**/SurSlide.js
+**/SurTab.js
+**/SurNav.js
+**/SurSNav.js
+**/ScrollBar.js
+**/time.js
+**/ie-css3.htc
